@@ -1,0 +1,188 @@
+:root {
+  --teal-accent: rgb(83, 158, 163);
+  --teal-accent-dark: rgb(47, 141, 148);
+  --text-grey: rgb(128, 128, 128);
+  --text-grey-dark: rgb(99, 93, 93);
+  --bg-grey: rgb(246, 248, 247);
+  --bg-grey-dark: rgb(232, 235, 233);
+  --spacing-md: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+main {
+  background-color: var(--bg-grey);
+}
+/*  HOME SHOWCASE ---    HOME SHOWCASE ---    HOME SHOWCASE ---  */
+.home-showcase {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  /* background-color: white; */
+  background-color: var(--teal-accent);
+  color: white;
+}
+
+.logo-wrap {
+  /* background: red; */
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 6rem;
+  width: 6rem;
+  background-image: url('/images/franks-img.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.franks-name {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.coding-something-great {
+  /* color: var(--text-grey); */
+  font-size: 1.1rem;
+  color: var(--bg-grey-dark);
+}
+.search-input-wrapper {
+  display: flex;
+  background-color: var(--bg-grey);
+  border-radius: 1rem;
+}
+.search-input {
+  background-color: var(--bg-grey);
+  font-size: 0.95rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  min-width: 14rem;
+  color: var(--teal-accent-dark);
+  padding: 0.5rem 1rem;
+}
+
+.search-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 3rem;
+  background-color: var(--teal-accent);
+  border: solid white 1px;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+}
+.search-icon-wrapper:hover {
+  background-color: var(--teal-accent-dark);
+}
+.search-icon {
+  color: white;
+}
+
+.proj-cards {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+  padding: 4rem;
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+  background-color: rgb(246, 248, 247);
+}
+.project {
+  background: white;
+  width: 20rem;
+  height: 38rem;
+  border-radius: 0.5rem;
+  /* box-shadow: offset-x offset-y blur-radius color; */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  overflow-y: hidden;
+}
+
+.proj-card-img {
+  height: 12rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.proj-card-img-next-auth {
+  background-image: url('/images/nextauth.jpeg');
+}
+.proj-card-img-next-eccomerce {
+  background-image: url('/images/next-eccommerce-brad.jpeg');
+}
+.proj-card-img-mern-eccomerce {
+  background-image: url('/images/mern.jpeg');
+}
+.proj-card-content {
+  padding: 0.5rem;
+}
+
+.proj-card-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.mern-side {
+  font-size: 1.1rem;
+  display: inline-block;
+  background-color: var(--text-grey-dark);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.1rem 0.5rem;
+  margin: 0.5rem 0;
+}
+.proj-card-techs {
+  /* overflow: hidden; */
+  height: 12.4rem;
+  overflow-y: auto;
+}
+
+.proj-card-techs p {
+  color: var(--text-grey);
+  margin-bottom: 0.7rem;
+}
+.proj-card-techs p span {
+  color: var(--text-grey-dark);
+  font-weight: 600;
+}
+
+.tech-tools {
+  border: none;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-grey-dark);
+  gap: 1rem;
+}
+.see-live-link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  text-decoration: none;
+  background-color: var(--teal-accent);
+  color: white;
+  padding: 0.2rem;
+}
+.see-live-link:hover {
+  background-color: var(--teal-accent-dark);
+}
+.check-tech-icon {
+  color: white;
+}
