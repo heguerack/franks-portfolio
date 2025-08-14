@@ -10,24 +10,43 @@
   <body>
     <main>
       <section class="home-showcase">
-        <div class="logo-wrap">
-          <div class="logo-img"></div>
-          <div class="">
-            <p class="franks-name">Code with Frank</p>
-            <p class="coding-something-great">Coding one line at a time!</p>
+        <!-- LOGO & NAME  -->
+        <div class="home-showcase-logo-search">
+          <div class="logo-wrap">
+            <div class="logo-img"></div>
+            <div class="">
+              <p class="franks-name">Code with Frank</p>
+              <p class="coding-something-great">Coding one line at a time!</p>
+            </div>
           </div>
         </div>
-        <div class="search-input-wrapper">
-          <input
-            class="search-input"
-            type="text"
-            placeholder="Search meaning of techs"
-          />
-          <div class="search-icon-wrapper">
-            <i data-lucide="search" class="search-icon"></i>
-          </div>
+        <!-- SEARCH INPUT WRAPPER  -->
+        <div class="search-input-wrapper" id="search-input-wrapper">
+            <input
+              class="search-input"
+              id="search-input"
+              type="text"
+              placeholder="Search meaning of techs"
+            />
+            <div class="search-icon-wrapper">
+              <i data-lucide="search" class="search-icon"></i>
+            </div>
+        </div>
+         <!-- SEARCH RESULTS  -->
+        <div class="search-results">
+            <!--  -->
+          
         </div>
       </section>
+
+      <!-- DIALOg / POPUP  -->
+        <dialog id="tech-dialog" class="tech-dialog">
+        <article id="tech-content"></article>
+        <form method="dialog">
+          <button class="close-btn">Close</button>
+        </form>
+        </dialog>
+   
 
       <section class="proj-cards">
         <!-- HTML CSS JS ------ HTML CSS JS ---- HTML CSS JS --->
@@ -65,12 +84,6 @@
                 >
                   GitHub
                   <i data-lucide="github" class="check-tech-icon"></i>
-                </a>
-              </div>
-              <div class="">
-                <a class="see-live-link" href="/html.html">
-                  Project details
-                  <i data-lucide="globe" class="check-tech-icon"></i>
                 </a>
               </div>
             </div>
@@ -112,20 +125,15 @@
             </div>
             <div class="tech-tools">
               <div class="">
-                <a
-                  class="see-live-link"
-                  href="https://your-site.com"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <span class="see-live-link">
                   Check live
                   <i data-lucide="monitor" class="check-tech-icon"></i>
-                </a>
+                </span>
               </div>
               <div class="">
                 <a
                   class="see-live-link"
-                  href="https://your-site.com"
+                  href="https://github.com/heguerack/mern-jobify"
                   target="_blank"
                   rel="noopener"
                 >
@@ -133,16 +141,6 @@
                   <i data-lucide="github" class="check-tech-icon"></i>
                 </a>
               </div>
-              <div class="">
-                <a
-                  class="see-live-link"
-                  href="https://your-site.com"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Project page
-                  <i data-lucide="globe" class="check-tech-icon"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -178,7 +176,7 @@
               <div class="">
                 <a
                   class="see-live-link"
-                  href="https://your-site.com"
+                  href="https://www.albertacolourpainting.com/"
                   target="_blank"
                   rel="noopener"
                 >
@@ -189,25 +187,14 @@
               <div class="">
                 <a
                   class="see-live-link"
-                  href="https://your-site.com"
+                  href="https://github.com/heguerack/alberta-painting-next-js-website-main"
                   target="_blank"
                   rel="noopener"
                 >
                   GitHub
                   <i data-lucide="github" class="check-tech-icon"></i>
                 </a>
-              </div>
-              <div class="">
-                <a
-                  class="see-live-link"
-                  href="https://your-site.com"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Project details
-                  <i data-lucide="globe" class="check-tech-icon"></i>
-                </a>
-              </div>
+              </div>          
             </div>
           </div>
         </div>
@@ -244,7 +231,7 @@
               <div class="">
                 <a
                   class="see-live-link"
-                  href="https://your-site.com"
+                  href="https://brad-store.vercel.app/"
                   target="_blank"
                   rel="noopener"
                 >
@@ -255,23 +242,12 @@
               <div class="">
                 <a
                   class="see-live-link"
-                  href="https://your-site.com"
+                  href="https://github.com/heguerack/brad-store"
                   target="_blank"
                   rel="noopener"
                 >
                   GitHub
                   <i data-lucide="github" class="check-tech-icon"></i>
-                </a>
-              </div>
-              <div class="">
-                <a
-                  class="see-live-link"
-                  href="https://your-site.com"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Project details
-                  <i data-lucide="globe" class="check-tech-icon"></i>
                 </a>
               </div>
             </div>
@@ -325,12 +301,7 @@
                   <i data-lucide="github" class="check-tech-icon"></i>
                 </a>
               </div>
-              <div class="">
-                <a class="see-live-link" href="https://your-site.com">
-                  Project details
-                  <i data-lucide="globe" class="check-tech-icon"></i>
-                </a>
-              </div>
+          
             </div>
           </div>
         </div>
@@ -367,7 +338,7 @@
                   target="_blank"
                   rel="noopener"
                 >
-                  Check live
+                  Coming soon!
                   <i data-lucide="wrench" class="check-tech-icon"></i>
                 </span>
               </div>

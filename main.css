@@ -1,4 +1,5 @@
 :root {
+  --teal-accent-light: rgb(130, 197, 201);
   --teal-accent: rgb(83, 158, 163);
   --teal-accent-dark: rgb(47, 141, 148);
   --text-grey: rgb(128, 128, 128);
@@ -17,20 +18,29 @@
 main {
   background-color: var(--bg-grey);
 }
+
+/*  HOME SHOWCASE ---    HOME SHOWCASE ---    HOME SHOWCASE ---  */
 /*  HOME SHOWCASE ---    HOME SHOWCASE ---    HOME SHOWCASE ---  */
 .home-showcase {
   padding: 2rem 4rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10rem;
-  /* background-color: white; */
+  justify-content: start;
+  gap: 1.5rem;
   background-color: var(--teal-accent);
   color: white;
 }
-
+.home-showcase-logo-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  background-color: var(--teal-accent);
+  color: white;
+  margin-bottom: 2rem;
+}
 .logo-wrap {
-  /* background: red; */
   display: flex;
   align-items: center;
 }
@@ -50,7 +60,6 @@ main {
 }
 
 .coding-something-great {
-  /* color: var(--text-grey); */
   font-size: 1.1rem;
   color: var(--bg-grey-dark);
 }
@@ -69,7 +78,8 @@ main {
   color: var(--teal-accent-dark);
   padding: 0.5rem 1rem;
 }
-
+/* SEARCH INPUT WRAPEER  */
+/* SEARCH INPUT WRAPEER  */
 .search-icon-wrapper {
   display: flex;
   align-items: center;
@@ -88,12 +98,29 @@ main {
   color: white;
 }
 
+/* SEARCH RESULTS   */
+/* SEARCH RESULTS   */
+.search-results {
+  padding: 0.5rem;
+}
+.search-results button {
+  color: white;
+  margin: 0.5rem;
+  background-color: white;
+  color: rgb(47, 141, 148);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+/* PROJECTCARDS - PROJECTCARDS */
+/* PROJECTCARDS - PROJECTCARDS */
+
 .proj-cards {
   width: 80%;
   margin: auto;
   padding-top: 4rem;
   padding: 4rem;
-  /* align-items: center; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -103,11 +130,9 @@ main {
 .project {
   background: white;
   width: 20rem;
-  height: 38rem;
+  height: 34rem;
   border-radius: 0.5rem;
-  /* box-shadow: offset-x offset-y blur-radius color; */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  overflow-y: hidden;
 }
 
 .proj-card-img {
@@ -147,21 +172,33 @@ main {
   margin-top: 0.3rem;
   margin-bottom: 0.5rem;
 }
-/* .mern-side {
-  font-size: 1.1rem;
-  display: inline-block;
-  background-color: var(--text-grey-dark);
-  border-radius: 0.5rem;
-  color: white;
-  padding: 0.1rem 0.5rem;
-  margin: 0.5rem 0;
-} */
+
 .proj-card-techs {
   /* overflow: hidden; */
-  height: 12.4rem;
+  height: 15rem;
   overflow-y: auto;
 }
+.proj-card-techs::-webkit-scrollbar {
+  width: 8px;
+}
+/* Provided by chatGpt */
+/* Provided by chatGpt */
+/* Provided by chatGpt */
+.proj-card-techs::-webkit-scrollbar-track {
+  background-color: var(--teal-accent-light); /* light gray track */
+}
 
+.proj-card-techs::-webkit-scrollbar-thumb {
+  background-color: var(--teal-accent); /* scrollbar color */
+  border-radius: 4px;
+}
+
+.proj-card-techs::-webkit-scrollbar-thumb:hover {
+  background-color: var(--teal-accent-dark); /* darker on hover */
+}
+/* Provided by chatGpt */
+/* Provided by chatGpt */
+/* Provided by chatGpt */
 .proj-card-techs p {
   color: var(--text-grey);
   margin-bottom: 0.7rem;
@@ -175,12 +212,12 @@ main {
   border: none;
   padding: 1rem 0.5rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: var(--bg-grey-dark);
   gap: 1rem;
 }
 .coming-soon {
-  height: 10rem;
+  height: 3.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,4 +237,30 @@ main {
 }
 .check-tech-icon {
   color: white;
+}
+
+/* DIALOG  / POPUP   */
+
+.tech-dialog {
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+.tech-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.close-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--teal-accent-dark);
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
 }
