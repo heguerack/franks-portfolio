@@ -120,13 +120,22 @@ main {
 }
 
 .proj-card-img-next-auth {
-  background-image: url('/images/nextauth.jpeg');
+  background-image: url('/images/authjs.jpeg');
 }
 .proj-card-img-next-eccomerce {
   background-image: url('/images/next-eccommerce-brad.jpeg');
 }
 .proj-card-img-mern-eccomerce {
   background-image: url('/images/mern.jpeg');
+}
+.proj-card-img-next-static {
+  background-image: url('/images/next-static-img.jpeg');
+}
+.proj-card-img-static-portfolio {
+  background-image: url('/images/html.jpeg');
+}
+.proj-card-img-web-app {
+  background-image: url('/images/webapp2.jpeg');
 }
 .proj-card-content {
   padding: 0.5rem;
@@ -138,7 +147,7 @@ main {
   margin-top: 0.3rem;
   margin-bottom: 0.5rem;
 }
-.mern-side {
+/* .mern-side {
   font-size: 1.1rem;
   display: inline-block;
   background-color: var(--text-grey-dark);
@@ -146,7 +155,7 @@ main {
   color: white;
   padding: 0.1rem 0.5rem;
   margin: 0.5rem 0;
-}
+} */
 .proj-card-techs {
   /* overflow: hidden; */
   height: 12.4rem;
@@ -170,6 +179,12 @@ main {
   background-color: var(--bg-grey-dark);
   gap: 1rem;
 }
+.coming-soon {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .see-live-link {
   display: inline-flex;
   align-items: center;
@@ -178,7 +193,7 @@ main {
   text-decoration: none;
   background-color: var(--teal-accent);
   color: white;
-  padding: 0.2rem;
+  padding: 0.2rem 0.6rem;
 }
 .see-live-link:hover {
   background-color: var(--teal-accent-dark);
