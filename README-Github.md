@@ -26,8 +26,8 @@ git push -u origin main
 - -donbt forget to puch to the new branch
 
 ```ts
-git checkout -b added-search-techs-feature
-git push -u origin added-search-techs-feature
+git checkout -b finishedtabs-and-tech-content
+git push -u origin finishedtabs-and-tech-content
 ```
 
 - Now swith to main and pull from github

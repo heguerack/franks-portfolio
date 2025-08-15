@@ -1,0 +1,169 @@
+.go-back-icon {
+  color: white;
+  width: 4rem;
+  height: 4rem;
+}
+
+.home-showcase {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  gap: 8rem;
+  /* cursor: pointer; */
+}
+:root {
+  --primary: #5e9cff;
+  --bg-light: #f9fafb;
+  --text-dark: #1a1a1a;
+  --text-light: #555;
+  --card-bg: #ffffffcc; /* soft glass look */
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Title */
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--primary);
+  margin: 3rem auto;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+/* CHAT GPT STYLES */
+/* CHAT GPT STYLES */
+/* CHAT GPT STYLES */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.project-block {
+  background: var(--card-bg);
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  max-width: 800px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border-left: 6px solid var(--primary);
+}
+
+.project-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+dialog {
+  width: 80%;
+  height: 100vh;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: auto;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+dialog iframe {
+  display: block;
+  width: 100%;
+  height: 92%;
+  border: none;
+}
+
+.dialog-close-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dialog-close-btn:hover {
+  background: #444;
+}
+/* ----------------- */
+button[onclick] {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button[onclick]:hover {
+  background-color: #444;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* CHAT GPT STYLES */
+/* CHAT GPT STYLES */
+/* CHAT GPT STYLES */
+.open-pdf-button {
+  padding: 0.2rem 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--teal-accent-dark);
+}
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.project-block p,
+.project-block li {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.project-block ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-block li {
+  margin-bottom: 0.6rem;
+}
+
+/* Optional Tech Pills */
+.tech-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.tech-pill {
+  background: var(--primary);
+  color: white;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}

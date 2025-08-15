@@ -36,6 +36,8 @@ searchInput.addEventListener('input', (e) => {
 })
 
 // OPEN TECH POPUP/MODAL
+// OPEN TECH POPUP/MODAL
+
 const dialog = document.getElementById('dialog-tech')
 const dialogContent = document.getElementById('dialog-tech-content')
 
@@ -71,3 +73,5 @@ projectCards.addEventListener('click', (e) => {
 })
 // yes, i play with this element, added the date-tech too , added a class so that i can style it, i did for just one pill, can you amend all the other pills?
 //ok cool. now what i will do is go over each tech, revise, personalize a bit more and then paste to you for gramar and revision
+
+// Portfolio page stuff,

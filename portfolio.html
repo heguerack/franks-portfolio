@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franks Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <main>
+      <section class="home-showcase">
+        <a href="/" class="">
+          <i data-lucide="arrow-left-circle" class="go-back-icon"></i>
+        </a>
+        <!-- LOGO & NAME  -->
+        <div class="home-showcase-logo-search">
+          <div class="logo-wrap">
+            <div class="logo-img"></div>
+            <div class="">
+              <p class="franks-name">Code with Frank</p>
+              <p class="coding-something-great">Coding one line at a time!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-details">
+        <h1 class="project-title">Static Portfolio Site (HTML/CSS/JS)</h1>
+
+        <!-- Overview -->
+        <div class="project-block">
+          <h2>Why This Stack?</h2>
+          <p>
+            I wanted a fully static site to showcase that I can build clean,
+            fast, accessible web pages with just HTML, CSS, and vanilla
+            JavaScript — no frameworks needed. It was also an opportunity to
+            focus on fundamentals.
+          </p>
+        </div>
+
+        <!-- Learnings -->
+        <div class="project-block">
+          <h2>What I Learned</h2>
+          <ul>
+            <li>Better understanding of semantic HTML and accessibility</li>
+            <!-- <li>Responsive layouts without relying on a CSS framework</li>+ -->
+            <li>Improved DOM manipulation using vanilla JavaScript</li>
+            <li>
+              Learnt about dialogs and modals. Hwne you open this modal no
+              jvascript is invloved!
+              <!-- Dialog -->
+              <dialog id="myDialog">
+                <iframe
+                  src="Modern HTML & CSS Cheat Sheet (2025).pdf"
+                  width="100%"
+                  height="600px"
+                  style="border: none"
+                ></iframe>
+                <form method="dialog">
+                  <button class="dialog-close-btn">Close</button>
+                </form>
+              </dialog>
+              <!-- Trigger Button -->
+              <button onclick="myDialog.showModal()" class="open-pdf-button">
+                Open PDF
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Highlights -->
+        <div class="project-block">
+          <h2>Cool Touches</h2>
+          <ul>
+            <li>Search box that filters tech tags with JS</li>
+            <li>Modular HTML pages with shared layout (like this one)</li>
+            <li>Custom dialog popups for each tech tag</li>
+          </ul>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="project-block">
+          <h2>Future Ideas</h2>
+          <ul>
+            <li>Add dark mode toggle with pure CSS</li>
+            <li>Make a mini CMS version with JSON + JS for easier updates</li>
+            <li>Bundle it with Vite for asset optimization (still static)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script>
+      lucide.createIcons()
+    </script>
+  </body>
+</html>
