@@ -172,18 +172,26 @@ main {
   margin-top: 0.3rem;
   margin-bottom: 0.5rem;
 }
-
+.mern-front-back {
+  display: inline-block;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  background-color: rgb(17, 19, 18);
+  margin: 0.5rem 0;
+}
 .proj-card-techs {
   /* overflow: hidden; */
   height: 15rem;
   overflow-y: auto;
 }
+
+/* Provided by chatGpt */
+/* Provided by chatGpt */
+/* Provided by chatGpt */
 .proj-card-techs::-webkit-scrollbar {
   width: 8px;
 }
-/* Provided by chatGpt */
-/* Provided by chatGpt */
-/* Provided by chatGpt */
 .proj-card-techs::-webkit-scrollbar-track {
   background-color: var(--teal-accent-light); /* light gray track */
 }
@@ -199,9 +207,16 @@ main {
 /* Provided by chatGpt */
 /* Provided by chatGpt */
 /* Provided by chatGpt */
+.proj-tech-span {
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.proj-tech-span:hover {
+  background-color: var(--bg-grey-dark);
+}
 .proj-card-techs p {
   color: var(--text-grey);
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 .proj-card-techs p span {
   color: var(--text-grey-dark);
@@ -214,7 +229,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: var(--bg-grey-dark);
-  gap: 1rem;
+  gap: 2rem;
 }
 .coming-soon {
   height: 3.8rem;
@@ -240,8 +255,9 @@ main {
 }
 
 /* DIALOG  / POPUP   */
+/* DIALOG  / POPUP   */
 
-.tech-dialog {
+.dialog-tech {
   padding: 1.5rem;
   border: none;
   border-radius: 0.5rem;
@@ -251,14 +267,55 @@ main {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
 }
 
-.tech-dialog::backdrop {
+.dialog-tech::backdrop {
   background: rgba(0, 0, 0, 0.7);
 }
+.dialog-tech-content {
+  padding: 1rem;
+}
+.dialog-tech-content-h3 {
+  color: var(--teal-accent-dark);
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.dialog-tech-content,
+.dialog-tech-content-desc,
+.dialog-tech-conclusion {
+  margin: 1rem 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+.dialog-tech-intro {
+  background-color: var(--bg-grey-dark);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  margin: 1.4rem 0;
+}
+.franks-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--teal-accent);
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  margin: 0.8rem 0.4rem;
+}
 
-.close-btn {
+.dialog-tech-content ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.dialog-tech-content ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+}
+.dialog-close-btn {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background: var(--teal-accent-dark);
+  background: var(--teal-accent);
   border: none;
   cursor: pointer;
   color: white;

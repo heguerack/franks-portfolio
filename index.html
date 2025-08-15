@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Franks Portfolio</title>
     <link rel="stylesheet" href="main.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
@@ -27,6 +27,7 @@
               id="search-input"
               type="text"
               placeholder="Search meaning of techs"
+              autocomplete="off"
             />
             <div class="search-icon-wrapper">
               <i data-lucide="search" class="search-icon"></i>
@@ -34,19 +35,19 @@
         </div>
          <!-- SEARCH RESULTS  -->
         <div class="search-results">
-            <!--  -->
-          
+          <!-- <button class="pill"></button> -->
         </div>
       </section>
 
       <!-- DIALOg / POPUP  -->
-        <dialog id="tech-dialog" class="tech-dialog">
-        <article id="tech-content"></article>
+      <dialog id="dialog-tech" class="dialog-tech">
+      <article id="dialog-tech-content" class="dialog-tech-content"></article>
         <form method="dialog">
-          <button class="close-btn">Close</button>
+          <button  class="dialog-close-btn">
+            Close
+          </button>
         </form>
-        </dialog>
-   
+      </dialog>
 
       <section class="proj-cards">
         <!-- HTML CSS JS ------ HTML CSS JS ---- HTML CSS JS --->
@@ -57,11 +58,11 @@
           <div class="proj-card-content">
             <p class="proj-card-title">HTML - Static Website</p>
             <div class="proj-card-techs">
-              <p><span>HTML</span> - Markup language</p>
-              <p><span>CSS</span> - Styling</p>
-              <p><span>JavaScript</span> - Dynamic behavior</p>
-              <p><span>Git</span> - Version control</p>
-              <p><span>Netlify</span> - Hosting platform</p>
+              <p><span data-tech="html" class="proj-tech-span">HTML</span> - Markup language</p>
+              <p><span data-tech="css" class="proj-tech-span">CSS</span> - Styling</p>
+              <p><span data-tech="javascript" class="proj-tech-span">JavaScript</span> - Dynamic behavior</p>
+              <p><span data-tech="git" class="proj-tech-span">Git</span> - Version control</p>
+              <p><span data-tech="netlify" class="proj-tech-span">Netlify</span> - Hosting platform</p>
             </div>
             <div class="tech-tools">
               <div class="">
@@ -98,30 +99,30 @@
             <p class="proj-card-title">MERN - Ecommerce</p>
             <div class="proj-card-techs">
               <!-- Frontend -->
-              <h3 class="mern-side">Front end</h3>
-              <p><span>React</span> - JS library</p>
-              <p><span>React Router</span> - Client-side routing</p>
-              <p><span>React Query</span> - Data fetching & caching</p>
-              <p><span>Recharts</span> - Data visualizations</p>
-              <p><span>React Toastify</span> - Notifications</p>
-              <p><span>Axios</span> - HTTP client</p>
-              <p><span>Styled Components</span> - CSS-in-JS styling</p>
-              <p><span>Day.js</span> - Date formatting</p>
-              <h3 class="mern-side">Back end</h3>
+              <h3 class="mern-front-back">Front end</h3>
+              <p><span  data-tech="react" class="proj-tech-span">React</span> - JS library</p>
+              <p><span data-tech="react router" class="proj-tech-span">React Router</span> - Client-side routing</p>
+              <p><span data-tech="react query" class="proj-tech-span">React Query</span> - Data fetching & caching</p>
+              <p><span data-tech="recharts" class="proj-tech-span">Recharts</span> - Data visualizations</p>
+              <p><span data-tech="react toastify" class="proj-tech-span">React Toastify</span> - Notifications</p>
+              <p><span data-tech="axios" class="proj-tech-span">Axios</span> - HTTP client</p>
+              <p><span data-tech="styledcomponents" class="proj-tech-span">Styled Components</span> - CSS-in-JS styling</p>
+              <p><span data-tech="dayJS" class="proj-tech-span">Day.js</span> - Date formatting</p>
+              <h3 class="mern-front-back">Back end</h3>
               <!-- Backend -->
-              <p><span>Express.js</span> - Backend framework</p>
-              <p><span>Mongoose</span> - MongoDB ODM</p>
-              <p><span>MongoDB</span> - NoSQL database</p>
-              <p><span>JWT</span> - Auth tokens</p>
-              <p><span>Bcrypt.js</span> - Password hashing</p>
-              <p><span>Multer</span> - File uploads</p>
-              <p><span>Cloudinary</span> - Image hosting</p>
-              <p><span>Helmet</span> - Security headers</p>
-              <p><span>Express Validator</span> - Backend validation</p>
-              <p><span>Express Rate Limit</span> - Rate limiting</p>
-              <p><span>Day.js</span> - Date formatting</p>
-              <p><span>Git</span> - Version control</p>
-              <p><span>Heroku</span> - Hosting platform</p>
+              <p><span data-tech="express" class="proj-tech-span">Express.js</span> - Backend framework</p>
+              <p><span data-tech="Mongoose" class="proj-tech-span">Mongoose</span> - MongoDB ODM</p>
+              <p><span data-tech="MongoDB" class="proj-tech-span">MongoDB</span> - NoSQL database</p>
+              <p><span data-tech="jwt" class="proj-tech-span">JWT</span> - Auth tokens</p>
+              <p><span data-tech="bcrypt" class="proj-tech-span">Bcrypt.js</span> - Password hashing</p>
+              <p><span data-tech="multer" class="proj-tech-span">Multer</span> - File uploads</p>
+              <p><span data-tech="cloudinary" class="proj-tech-span">Cloudinary</span> - Image hosting</p>
+              <p><span data-tech="helmet" class="proj-tech-span">Helmet</span> - Security headers</p>
+              <p><span data-tech="express validator" class="proj-tech-span">Express Validator</span> - Backend validation</p>
+              <p><span data-tech="expressratelimit" class="proj-tech-span">Express Rate Limit</span> - Rate limiting</p>
+              <p><span data-tech="dayJS" class="proj-tech-span">Day.js</span> - Date formatting</p>
+              <p><span data-tech="git" class="proj-tech-span">Git</span> - Version control</p>
+              <p><span data-tech="heroku" class="proj-tech-span">Heroku</span> - Hosting platform</p>
             </div>
             <div class="tech-tools">
               <div class="">
@@ -153,24 +154,24 @@
           <div class="proj-card-content">
             <p class="proj-card-title">Next.js - Static Website</p>
             <div class="proj-card-techs">
-              <p><span>React</span> - JS library</p>
-              <p><span>Next.js</span> - React framework</p>
-              <p><span>React Calendly</span> - Calendar integration</p>
-              <p><span>Nodemailer</span> - Email sending</p>
-              <p><span>TypeScript</span> - Static typing</p>
-              <p><span>Framer Motion</span> - Animations</p>
-              <p><span>Tailwind</span> - Utility-first CSS framework</p>
-              <p><span>Next Themes</span> - Dark/light theme switcher</p>
-              <p><span>HeroUI</span> - Component system</p>
-              <p><span>Lucide React</span> - Icons</p>
-              <p><span>Embla Carousel</span> - Lightweight carousel</p>
-              <p><span>Formik</span> - Form handling</p>
-              <p><span>Yup</span> - Form validation</p>
-              <p><span>Axios</span> - HTTP client</p>
-              <p><span>JS Cookie</span> - Cookie management</p>
-              <p><span>Sonner</span> - Notification/toast system</p>
-              <p><span>Git</span> - Version control</p>
-              <p><span>Vercel</span> - Hosting platform</p>
+              <p><span data-tech="react" class="proj-tech-span">React</span> - JS library</p>
+              <p><span data-tech="nextjs" class="proj-tech-span">Next.js</span> - React framework</p>
+              <p><span data-tech="calendly" class="proj-tech-span">React Calendly</span> - Calendar integration</p>
+              <p><span data-tech="nodemailer" class="proj-tech-span">Nodemailer</span> - Email sending</p>
+              <p><span data-tech="typescript" class="proj-tech-span">TypeScript</span> - Static typing</p>
+              <p><span data-tech="framer motion " class="proj-tech-span">Framer Motion</span> - Animations</p>
+              <p><span data-tech="tailwindcss" class="proj-tech-span">Tailwind</span> - Utility-first CSS framework</p>
+              <p><span data-tech="next themes" class="proj-tech-span">Next Themes</span> - Dark/light theme switcher</p>
+              <p><span data-tech="heroui" class="proj-tech-span">HeroUI</span> - Component system</p>
+              <p><span data-tech="lucide react" class="proj-tech-span">Lucide React</span> - Icons</p>
+              <p><span data-tech="embla carousel" class="proj-tech-span">Embla Carousel</span> - Lightweight carousel</p>
+              <p><span data-tech="formik" class="proj-tech-span">Formik</span> - Form handling</p>
+              <p><span data-tech="yup" class="proj-tech-span">Yup</span> - Form validation</p>
+              <p><span data-tech="axios" class="proj-tech-span">Axios</span> - HTTP client</p>
+              <p><span data-tech="js cookie" class="proj-tech-span">JS Cookie</span> - Cookie management</p>
+              <!-- <p><span data-tech="sooner" class="proj-tech-span"> Sonner</span> - Notification/toast system</p> -->
+              <p><span data-tech="git" class="proj-tech-span">Git</span> - Version control</p>
+              <p><span data-tech="vercel" class="proj-tech-span">Vercel</span> - Hosting platform</p>
             </div>
             <div class="tech-tools">
               <div class="">
@@ -206,26 +207,26 @@
           <div class="proj-card-content">
             <p class="proj-card-title">Next.js - Ecommerce</p>
             <div class="proj-card-techs">
-              <p><span>Next.js</span> - React framework</p>
-              <p><span>React</span> - JS library</p>
-              <p><span>TypeScript</span> - Static typing</p>
-              <p><span>Tailwind</span> - Utility-first CSS framework</p>
-              <p><span>ShadCN</span> - Tailwind-based UI system</p>
-              <p><span>Prisma</span> - Type-safe ORM</p>
-              <p><span>Neon</span> - Serverless Postgres database</p>
-              <p><span>React Hook Form</span> - Form management</p>
-              <p><span>Zod</span> - Validation</p>
-              <p><span>Next Auth</span> - Auth system</p>
-              <p><span>Resend</span> - Email sending service</p>
-              <p><span>React Email</span> - Email templates</p>
-              <p><span>Stripe</span> - Payment processing</p>
-              <p><span>PayPal</span> - Payment option</p>
-              <p><span>UploadThing</span> - File uploads</p>
-              <p><span>Lucide React</span> - Icons</p>
-              <p><span>Next Themes</span> - Dark/light theme switcher</p>
-              <p><span>Embla Carousel</span> - Slider library</p>
-              <p><span>Git</span> - Version control</p>
-              <p><span>Vercel</span> - Hosting platform</p>
+              <p><span data-tech="nextjs" class="proj-tech-span">Next.js</span> - React framework</p>
+              <p><span data-tech="react" class="proj-tech-span">React</span> - JS library</p>
+              <p><span data-tech="typescript" class="proj-tech-span" >TypeScript</span> - Static typing</p>
+              <p><span data-tech="tailwindcss" class="proj-tech-span">Tailwind</span> - Utility-first CSS framework</p>
+              <p><span data-tech="shadcnui" class="proj-tech-span">ShadCN</span> - Tailwind-based UI system</p>
+              <p><span data-tech="prisma" class="proj-tech-span">Prisma</span> - Type-safe ORM</p>
+              <p><span data-tech="neon" class="proj-tech-span">Neon</span> - Serverless Postgres database</p>
+              <p><span data-tech="react hook form" class="proj-tech-span">React Hook Form</span> - Form management</p>
+              <p><span data-tech="zod" class="proj-tech-span">Zod</span> - Validation</p>
+              <p><span data-tech="next auth" class="proj-tech-span">Next Auth</span> - Auth system</p>
+              <p><span data-tech="resend" class="proj-tech-span">Resend</span> - Email sending service</p>
+              <p><span data-tech="reactemail" class="proj-tech-span">React Email</span> - Email templates</p>
+              <p><span data-tech="stripe" class="proj-tech-span">Stripe</span> - Payment processing</p>
+              <p><span data-tech="paypal" class="proj-tech-span">PayPal</span> - Payment option</p>
+              <p><span data-tech="uploadthing" class="proj-tech-span">UploadThing</span> - File uploads</p>
+              <p><span data-tech="lucidereact" class="proj-tech-span">Lucide React</span> - Icons</p>
+              <p><span data-tech="nextthemes" class="proj-tech-span"> Next Themes</span> - Dark/light theme switcher</p>
+              <p><span data-tech="embla carousel" class="proj-tech-span">Embla Carousel</span> - Slider library</p>
+              <p><span data-tech="git" class="proj-tech-span">Git</span> - Version control</p>
+              <p><span data-tech="vercel" class="proj-tech-span">Vercel</span> - Hosting platform</p>
             </div>
             <div class="tech-tools">
               <div class="">
@@ -262,21 +263,21 @@
             <h2 class="proj-card-title">Next.js - Auth system</h2>
 
             <div class="proj-card-techs">
-              <p><span>Auth.js</span> - Auth package</p>
-              <p><span>React</span> - JS framework</p>
-              <p><span>Next.js</span> - React framework</p>
-              <p><span>TypeScript</span> - Static typing</p>
-              <p><span>Tailwind</span> - Utility-first CSS framework</p>
-              <p><span>ShadCN</span> - Tailwind-based UI system</p>
-              <p><span>Zod</span> - Validation</p>
-              <p><span>Prisma</span> - Type-safe ORM</p>
-              <p><span>Neon</span> - Serverless Postgres database</p>
-              <p><span>React Hook Form</span> - Form management</p>
-              <p><span>Resend </span> - Email sending service</p>
-              <p><span>Lucide React</span> - Icons</p>
-              <p><span>Next Themes</span> - Dark/light theme switcher</p>
-              <p><span>Git</span> - Version control</p>
-              <p><span>Vercel</span> - Hosting platform</p>
+              <p><span data-tech="nextauth" class="proj-tech-span">Auth.js</span> - Auth package</p>
+              <p><span data-tech="react" class="proj-tech-span">React</span> - JS framework</p>
+              <p><span data-tech="nextjs" class="proj-tech-span">Next.js</span> - React framework</p>
+              <p><span data-tech="typescript" class="proj-tech-span">TypeScript</span> - Static typing</p>
+              <p><span data-tech="tailwindcss" class="proj-tech-span">Tailwind</span> - Utility-first CSS framework</p>
+              <p><span data-tech="shadcnui" class="proj-tech-span">ShadCN</span> - Tailwind-based UI system</p>
+              <p><span data-tech="zod" class="proj-tech-span">Zod</span> - Validation</p>
+              <p><span data-tech="prisma" class="proj-tech-span">Prisma</span> - Type-safe ORM</p>
+              <p><span data-tech="neon" class="proj-tech-span">Neon</span> - Serverless Postgres database</p>
+              <p><span data-tech="reacthookform" class="proj-tech-span">React Hook Form</span> - Form management</p>
+              <p><span data-tech="resend" class="proj-tech-span">Resend </span> - Email sending service</p>
+              <p><span data-tech="lucide react" class="proj-tech-span">Lucide React</span> - Icons</p>
+              <p><span data-tech="nextthemes" class="proj-tech-span">Next Themes</span> - Dark/light theme switcher</p>
+              <p><span data-tech="git" class="proj-tech-span">Git</span> - Version control</p>
+              <p><span data-tech="vercel" class="proj-tech-span">Vercel</span> - Hosting platform</p>
             </div>
             <div class="tech-tools">
               <div class="">
@@ -313,22 +314,22 @@
           <div class="proj-card-content">
             <h2 class="proj-card-title">Next.js - Web App</h2>
             <div class="proj-card-techs">
-              <p><span>BetterAuth</span> - Auth package</p>
-              <p><span>Drizzle</span> - Type-safe ORM</p>
-              <p><span>Resend </span> - Email sending service</p>
-              <p><span>React Email</span> - Email templates</p>
-              <p><span>React</span> - JS framework</p>
-              <p><span>Next.js</span> - React framework</p>
-              <p><span>TypeScript</span> - Static typing</p>
-              <p><span>Tailwind</span> - Utility-first CSS framework</p>
-              <p><span>ShadCN</span> - Tailwind-based UI system</p>
-              <p><span>Zod</span> - Validation</p>
-              <p><span>Neon</span> - Serverless Postgres database</p>
-              <p><span>React Hook Form</span> - Form management</p>
-              <p><span>Lucide React</span> - Icons</p>
-              <p><span>Next Themes</span> - Dark/light theme switcher</p>
-              <p><span>Git</span> - Version control</p>
-              <p><span>Vercel</span> - Hosting platform</p>
+              <p><span data-tech="betterauth" class="proj-tech-span">BetterAuth</span> - Auth package</p>
+              <p><span data-tech="drizzle" class="proj-tech-span">Drizzle</span> - Type-safe ORM</p>
+              <p><span data-tech="resend" class="proj-tech-span">Resend </span> - Email sending service</p>
+              <p><span data-tech="reactemail" class="proj-tech-span">React Email</span> - Email templates</p>
+              <p><span data-tech="react" class="proj-tech-span">React</span> - JS framework</p>
+              <p><span data-tech="nextjs" class="proj-tech-span">Next.js</span> - React framework</p>
+              <p><span data-tech="typescript" class="proj-tech-span">TypeScript</span> - Static typing</p>
+              <p><span data-tech="tailwindcss" class="proj-tech-span">Tailwind</span> - Utility-first CSS framework</p>
+              <p><span data-tech="shadcnui" class="proj-tech-span">ShadCN</span> - Tailwind-based UI system</p>
+              <p><span data-tech="zod" class="proj-tech-span">Zod</span> - Validation</p>
+              <p><span data-tech="neon" class="proj-tech-span">Neon</span> - Serverless Postgres database</p>
+              <p><span data-tech="reacthookform" class="proj-tech-span">React Hook Form</span> - Form management</p>
+              <p><span data-tech="lucidereact" class="proj-tech-span">Lucide React</span> - Icons</p>
+              <p><span data-tech="nextthemes" class="proj-tech-span">Next Themes</span> - Dark/light theme switcher</p>
+              <p><span data-tech="git" class="proj-tech-span">Git</span> - Version control</p>
+              <p><span data-tech="vercel" class="proj-tech-span">Vercel</span> - Hosting platform</p>
             </div>
             <div class="tech-tools coming-soon">
               <div class="">
