@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frank's Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <main>
+      <section class="home-showcase">
+        <a href="/" class="">
+          <i data-lucide="arrow-left-circle" class="go-back-icon"></i>
+        </a>
+        <!-- LOGO & NAME -->
+        <div class="home-showcase-logo-search">
+          <div class="logo-wrap">
+            <div class="logo-img"></div>
+            <div class="">
+              <p class="franks-name">Code with Frank</p>
+              <p class="coding-something-great">Coding one line at a time!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-details">
+        <h1 class="project-title">Next.js - Static Website</h1>
+
+        <!-- Overview -->
+        <div class="project-block">
+          <h2>Why This Stack?</h2>
+          <p>
+            After practicing with the MERN stack, Next.js felt like the right
+            next step. It lets me use modern features while delivering both
+            static and dynamic pages.
+          </p>
+        </div>
+
+        <!-- Learnings -->
+        <div class="project-block">
+          <h2>What I Learned</h2>
+          <ul>
+            <li>
+              Improved my merging of server components with client components to
+              add interactivity while still delivering static content — using
+              wrappers and children where needed.
+            </li>
+            <li>
+              Improved my critical thinking on how pages and content render, and
+              how to optimize them for speed and user experience without
+              sacrificing SEO.
+            </li>
+            <li>Started learning how to work with other teams using Git.</li>
+          </ul>
+        </div>
+
+        <!-- Highlights -->
+        <div class="project-block">
+          <h2>Cool Touches</h2>
+          <ul>
+            <li>Calendly integration for easy booking</li>
+            <li>
+              A gallery with project cards, each containing its own mini-gallery
+            </li>
+          </ul>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="project-block">
+          <h2>Future Ideas</h2>
+          <ul>
+            <li>
+              Design and create better cards for both Google reviews as well as
+              HomeStars ones.
+            </li>
+            <li>
+              Optimize images a bit in our services section.
+              <ul>
+                <li>
+                  It seems like only the first card is static while the other 5
+                  are dynamic — not sure yet, have to dig into that.
+                </li>
+                <li>
+                  One idea is to force shadCN to render all images right away,
+                  but then stop the loading initially and fetch them as soon as
+                  the page loads.
+                </li>
+                <li>
+                  Add an online payment system connecting invoice ID, user ID,
+                  and payments — something along those lines.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Add a feature for online estimates.
+              <ul>
+                <li>
+                  Leads could add measurements, images, even videos — and get a
+                  5% discount if done this way.
+                </li>
+                <li>
+                  Once I learn more about AI agents and MCPs, I might add nice
+                  features like chats, routing, checking invoices — pretty much
+                  automating to the max. But that’s why I’m still learning!!
+                </li>
+              </ul>
+            </li>
+            <li>
+              Maybe even add an actual portal where clients can log in to check
+              the colours they used, formulas, invoices, and hey, maybe even
+              promotions that way!!
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script>
+      lucide.createIcons()
+    </script>
+  </body>
+</html>

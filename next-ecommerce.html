@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frank's Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <main>
+      <section class="home-showcase">
+        <a href="/" class="">
+          <i data-lucide="arrow-left-circle" class="go-back-icon"></i>
+        </a>
+        <!-- LOGO & NAME  -->
+        <div class="home-showcase-logo-search">
+          <div class="logo-wrap">
+            <div class="logo-img"></div>
+            <div class="">
+              <p class="franks-name">Code with Frank</p>
+              <p class="coding-something-great">Coding one line at a time!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-details">
+        <h1 class="project-title">NEXT – Ecommerce</h1>
+
+        <!-- Overview -->
+        <div class="project-block">
+          <h2>Why This Stack?</h2>
+          <p>
+            Because like I mentioned before, the idea of learning Next.js was to
+            be able to deliver not only fancy static websites but also real web
+            apps.
+          </p>
+        </div>
+
+        <!-- Learnings -->
+        <div class="project-block">
+          <h2>What I Learned</h2>
+          <ul>
+            <li>Improved my NextAuth/auth.js knowledge</li>
+            <li>Improved my skills with payments using Stripe</li>
+            <li>
+              Learned about React templates and how to combine them with Resend
+              for nice-looking emails
+            </li>
+            <li>Solidified my flow with shadCN, Zod, and React Hook Form</li>
+            <li>Greatly improved my Prisma ORM knowledge</li>
+          </ul>
+        </div>
+
+        <!-- Highlights -->
+        <div class="project-block">
+          <h2>Cool Touches</h2>
+          <ul>
+            <li>User/admin auth roles</li>
+            <li>Smooth dark/light mode</li>
+          </ul>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="project-block">
+          <h2>Future Ideas</h2>
+          <ul>
+            <li>
+              Add user roles/authorization to routes so that other admins can
+              add their own products, and of course have a super admin as well
+            </li>
+            <li>Add buttons and features for smoother navigation</li>
+            <li>
+              Fix the way the cart is set up. Right now, once we go to the
+              payment page, the cart gets destroyed in the database — I’m not
+              sure if it stays locally in a cookie or something. I want to make
+              it so that the cart only disappears once the payment is
+              successful. The issue is that if the payment doesn’t go through,
+              visitors have to go back, grab items again, and rebuild their
+              cart.
+            </li>
+            <li>Improve the auth system in general</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script>
+      lucide.createIcons()
+    </script>
+  </body>
+</html>

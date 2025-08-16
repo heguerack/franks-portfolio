@@ -1,3 +1,26 @@
+:root {
+  --primary: #5e9cff;
+  --bg-light: #f9fafb;
+  --text-dark: #1a1a1a;
+  --text-light: #555;
+  --card-bg: #ffffffcc; /* soft glass look */
+  /* --teal-accent-light: rgb(130, 197, 201);
+  --teal-accent: rgb(83, 158, 163);
+  --teal-accent-dark: rgb(47, 141, 148);
+  --text-grey: rgb(128, 128, 128);
+  --text-grey-dark: rgb(99, 93, 93);
+  --bg-grey: rgb(246, 248, 247);
+  --bg-grey-dark: rgb(232, 235, 233);
+  --spacing-md: 1rem; */
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
 .go-back-icon {
   color: white;
   width: 4rem;
@@ -11,26 +34,10 @@
   gap: 8rem;
   /* cursor: pointer; */
 }
-:root {
-  --primary: #5e9cff;
-  --bg-light: #f9fafb;
-  --text-dark: #1a1a1a;
-  --text-light: #555;
-  --card-bg: #ffffffcc; /* soft glass look */
-}
-
-body {
-  background-color: var(--bg-light);
-  font-family: 'Segoe UI', sans-serif;
-  color: var(--text-dark);
-  margin: 0;
-  padding: 0;
-}
-
 /* Page Title */
 .project-title {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 5.5rem;
+  font-weight: bolder;
   text-align: center;
   color: var(--primary);
   margin: 3rem auto;
@@ -54,7 +61,7 @@ body {
   padding: 2rem 2.5rem;
   max-width: 800px;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
-  border-left: 6px solid var(--primary);
+  border-left: 6px solid var(--teal-accent);
 }
 
 .project-block:hover {
@@ -134,7 +141,9 @@ button[onclick]:hover {
   margin-bottom: 1rem;
   color: var(--text-dark);
 }
-
+.project-block h2 {
+  margin-bottom: 0.5rem;
+}
 .project-block p,
 .project-block li {
   font-size: 1rem;
