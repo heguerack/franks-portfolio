@@ -75,3 +75,39 @@ projectCards.addEventListener('click', (e) => {
 //ok cool. now what i will do is go over each tech, revise, personalize a bit more and then paste to you for gramar and revision
 
 // Portfolio page stuff,
+// Portfolio page stuff,
+// Portfolio page stuff,
+const projCardHtmlSite = document.querySelector('.portfolio-site-backdrop')
+const backDropButton = document.querySelector('.portfolio-site-backdrop-button')
+const liveHtml = document.querySelector('.see-live-link-html-site')
+
+liveHtml.addEventListener('click', () => {
+  projCardHtmlSite.classList.add('portfolio-site-backdrop-show')
+  console.log('We made it!!')
+})
+
+backDropButton.addEventListener('click', () => {
+  projCardHtmlSite.classList.remove('portfolio-site-backdrop-show')
+  console.log('We made it!!')
+})
+
+// EchoAI page stuff,
+// EchoAI page stuff,
+// EchoAI page stuff,
+const projCardHtmlSiteEcho = document.querySelector(
+  '.portfolio-site-backdrop-echo'
+)
+const backDropButtonEcho = document.querySelector(
+  '.portfolio-site-backdrop-button-echo'
+)
+const liveHtmlEcho = document.querySelector('.see-live-link-html-site-echo')
+
+liveHtmlEcho.addEventListener('click', () => {
+  projCardHtmlSiteEcho.classList.add('portfolio-site-backdrop-show')
+  console.log('We made it!!')
+})
+
+backDropButtonEcho.addEventListener('click', () => {
+  projCardHtmlSiteEcho.classList.remove('portfolio-site-backdrop-show')
+  console.log('We made it!!')
+})

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frank’s Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <main>
+      <section class="home-showcase">
+        <a href="/" aria-label="Go back">
+          <i data-lucide="arrow-left-circle" class="go-back-icon"></i>
+        </a>
+
+        <!-- LOGO & NAME  -->
+        <div class="home-showcase-logo-search">
+          <div class="logo-wrap">
+            <div class="logo-img" aria-hidden="true"></div>
+            <div>
+              <p class="franks-name">Code with Frank</p>
+              <p class="coding-something-great">Coding one line at a time!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-details">
+        <h1 class="project-title">
+          AI Customer Support Platform couse (Code with Antonio)
+        </h1>
+
+        <!-- Overview -->
+        <div class="project-block">
+          <h2>Overview</h2>
+          <p>
+            In this course, we build an AI-powered customer support platform
+            from the ground up. You’ll set up real-time AI chat with
+            <strong>Convex Agents</strong>, add voice support with
+            <strong>VAPI</strong>, and upload docs to create a knowledge base
+            using <strong>embeddings</strong> and <strong>RAG</strong>. We teach
+            the AI when to escalate a conversation to a human or auto-resolve
+            it. You’ll also build workspaces, teams, authentication, and billing
+            with <strong>Clerk</strong>, embed a chat widget, securely store API
+            keys with <strong>AWS</strong>, and track errors with
+            <strong>Sentry</strong>. Each chapter wraps up with a pull request
+            and a CodeRabbit review.
+          </p>
+        </div>
+
+        <!-- Learnings -->
+        <div class="project-block">
+          <h2>What I’ll Learn</h2>
+          <ul>
+            <li>Real-time AI chat using <strong>Convex Agents</strong></li>
+            <li>Voice support integration with <strong>VAPI</strong></li>
+            <li>
+              Document uploads → embeddings + <strong>RAG</strong> knowledge
+              base
+            </li>
+            <li>
+              AI policies for <strong>auto-resolve</strong> vs
+              <strong>human escalation</strong>
+            </li>
+            <li>
+              Workspaces, teams, authentication, and billing with
+              <strong>Clerk</strong>
+            </li>
+            <li>Embedding and customizing a <strong>chat widget</strong></li>
+            <li>Secure API key storage with <strong>AWS</strong></li>
+            <li>Error monitoring and tracing with <strong>Sentry</strong></li>
+            <li>
+              PR-driven workflow: each chapter ends with a PR +
+              <strong>CodeRabbit</strong> review
+            </li>
+          </ul>
+        </div>
+
+        <!-- Highlights -->
+        <div class="project-block">
+          <h2>Highlights</h2>
+          <ul>
+            <li>
+              Smart escalation rules: seamless handoff to humans when needed
+            </li>
+            <li>
+              Fast RAG responses from an up-to-date, doc-backed knowledge base
+            </li>
+            <li>Drop-in chat widget that’s easy to embed and configure</li>
+            <li>Clean team/workspace model for multi-user collaboration</li>
+            <li>
+              Production-ready setup: Clerk auth + AWS secrets + Sentry
+              visibility
+            </li>
+          </ul>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="project-block">
+          <h2>Future Ideas</h2>
+          <ul>
+            <li>Expand escalation logic with SLAs and queue routing</li>
+            <li>
+              Add analytics for resolution time, deflection rate, and CSAT
+            </li>
+            <li>Multi-tenant billing refinements and usage-based pricing</li>
+            <li>Experiment with tool use / MCP after the core build</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      lucide.createIcons()
+    </script>
+  </body>
+</html>
