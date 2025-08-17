@@ -21,19 +21,12 @@ body {
   margin: 0;
   padding: 0;
 }
-.go-back-icon {
-  color: white;
-  width: 4rem;
-  height: 4rem;
-}
-
 .home-showcase {
-  /* display: flex; */
   flex-direction: row;
   justify-content: center;
   gap: 8rem;
-  /* cursor: pointer; */
 }
+
 /* Page Title */
 .project-title {
   font-size: 5.5rem;
@@ -44,6 +37,57 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-align: center;
+}
+.go-back-icon {
+  color: white;
+  width: 4rem;
+  height: 4rem;
+}
+@media (max-width: 800px) {
+  .home-showcase {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .go-back-icon {
+    color: white;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-showcase {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .go-back-icon {
+    color: white;
+    width: 2rem;
+    height: 2rem;
+  }
+  .logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.go-back-icon-teal-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--teal-accent-dark);
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+.go-back-icon-teal-wrapper:hover {
+  background-color: var(--teal-accent);
+}
+.go-back-icon-teal {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* CHAT GPT STYLES */
