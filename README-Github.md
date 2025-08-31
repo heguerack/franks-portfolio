@@ -17,7 +17,7 @@ git push -u origin main
 git branch
 git checkout main
 git add .
-git commit -m "finished portfolio version two"
+git commit -m "went through the whole site and made general minor udjustsments"
 git push -u origin main
 ```
 
@@ -26,8 +26,8 @@ git push -u origin main
 - -donbt forget to puch to the new branch
 
 ```ts
-git checkout -b finished-portfolio-version-two
-git push -u origin finished-portfolio-version-two
+git checkout -b portfolio-v2
+git push -u origin portfolio-v2
 ```
 
 - Now swith to main and pull from github
