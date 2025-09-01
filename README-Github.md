@@ -17,7 +17,7 @@ git push -u origin main
 git branch
 git checkout main
 git add .
-git commit -m "fixed check live link for the mern card"
+git commit -m "fixed check live link for the mern card, target and rel"
 git push -u origin main
 ```
 
