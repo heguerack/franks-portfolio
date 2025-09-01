@@ -17,7 +17,7 @@ git push -u origin main
 git branch
 git checkout main
 git add .
-git commit -m "went through the whole site and made general minor udjustsments"
+git commit -m "fixed check live link for the mern card"
 git push -u origin main
 ```
 
